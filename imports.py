@@ -1,8 +1,12 @@
 import math, random
 # imports can be imported on the same line if delimited with a comma.
 # imports can be declared anywhere in a program, but are typically declared on the top line. 
-# OR specific entities can be imported by  
+
+# OR specific entities can be imported by from moduleName import entityName
 from statistics import mean
+
+# multiple entities can be imported from one module such that:
+from datetime import date, datetime
 
 ''' to call an ENTITY inside a module write:
 
@@ -18,10 +22,17 @@ When only an entity is imported from a module, only the entity name is needed to
 
 from statistics import mean
 
-mean(enterStructureToApplyEntityTo)''' 
+mean(enterStructureToApplyEntityTo)
+
+this is known as "accessible without qualification"''' 
 
 numbers: list = [1, 100]
 
 average: float = mean(numbers)
 
 print(average)
+
+# imported entities from datetime
+
+print (date())
+print (datetime())
