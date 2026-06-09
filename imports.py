@@ -34,5 +34,5 @@ print(average)
 
 # imported entities from datetime
 
-print (date())
-print (datetime())
+print (date.today())
+print (datetime.now())
