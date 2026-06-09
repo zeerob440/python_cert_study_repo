@@ -86,4 +86,4 @@ print (toss_result)
 
 rnum: float = anynum(1, 5)
 
-print (anynum)
+print (rnum)
