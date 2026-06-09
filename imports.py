@@ -62,4 +62,4 @@ password = 'guest'
 
 output = supersecertsuace.sha256(password.encode())
 
-print(output.supersecretsauce.hexdigest())
+print(output.hexdigest())
