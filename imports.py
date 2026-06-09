@@ -46,7 +46,7 @@ print (datetime.now())
 
 # module operations with import *
 
-lower_case: str = ascii_lowercase()
-upper_case: str = ascii_uppercase()
+lower_case: str = ascii_lowercase
+upper_case: str = ascii_uppercase
 print(lower_case)
 print(upper_case)
