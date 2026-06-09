@@ -9,11 +9,12 @@ from statistics import mean
 from datetime import date, datetime
 
 # import all entities from a module.
+# this method imports all entities from the module
+# it can cause namespace collisions, but all entities are accessible without qualification
 
 from string import *
 
-# this method imports all entities from the module
-# it can cause namespace collisions, but all entities are accessible without qualification
+
 
 ''' to call an ENTITY inside a module write:
 
@@ -45,7 +46,7 @@ print (date.today())
 print (datetime.now())
 
 # module operations with import *
-
+# ascii_lowercase and ascii_uppercase are entities in the 
 lower_case: str = ascii_lowercase
 upper_case: str = ascii_uppercase
 print(lower_case)
