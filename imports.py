@@ -14,6 +14,9 @@ from datetime import date, datetime
 
 from string import *
 
+# importing a module with 'as' keyword and an alias
+import hashlib as supersecertsuace
+
 
 
 ''' to call an ENTITY inside a module write:
@@ -46,7 +49,8 @@ print (date.today())
 print (datetime.now())
 
 # module operations with import *
-# ascii_lowercase and ascii_uppercase are entities in the 
+# ascii_lowercase and ascii_uppercase are entities in the string module
+# this again risks namespace collisions
 lower_case: str = ascii_lowercase
 upper_case: str = ascii_uppercase
 print(lower_case)
