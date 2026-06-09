@@ -8,6 +8,13 @@ from statistics import mean
 # multiple entities can be imported from one module such that:
 from datetime import date, datetime
 
+# import all entities from a module.
+
+from string import *
+
+# this method imports all entities from the module
+# it can cause namespace collisions, but all entities are accessible without qualification
+
 ''' to call an ENTITY inside a module write:
 
  moduleNameHere.entityNameHere  
@@ -36,3 +43,10 @@ print(average)
 
 print (date.today())
 print (datetime.now())
+
+# module operations with import *
+
+lower_case: str = ascii_lowercase()
+upper_case: str = ascii_uppercase()
+print(lower_case)
+print(upper_case)
