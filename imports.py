@@ -13,8 +13,15 @@ EXAMPLE: math.sqrt
 mathy_thing: float = math.sqrt(25)
 print(mathy_thing)
 
-# specific entity 'mean' imported from module 'statistics' 
+'''specific entity 'mean' imported from module 'statistics
+When only an entity is imported from a module, only the entity name is needed to call the entity.
+
+from statistics import mean
+
+mean(enterStructureToApplyEntityTo)''' 
 
 numbers: list = [1, 100]
 
-average: float = statistics.mean(numbers)
+average: float = mean(numbers)
+
+print(average)
