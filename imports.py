@@ -55,3 +55,11 @@ lower_case: str = ascii_lowercase
 upper_case: str = ascii_uppercase
 print(lower_case)
 print(upper_case)
+
+# alias operations 
+
+password = 'guest'
+
+output = supersecertsuace.sha256(password.encode())
+
+print(output)
