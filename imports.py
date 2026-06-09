@@ -1,4 +1,4 @@
-import math, random
+import math
 # imports can be imported on the same line if delimited with a comma.
 # imports can be declared anywhere in a program, but are typically declared on the top line. 
 
@@ -24,7 +24,7 @@ import hashlib as supersecertsauce
  moduleNameHere.entityNameHere  
 EXAMPLE: math.sqrt
  '''
-
+print('basic import whole module ops\n')
 mathy_thing: float = math.sqrt(25)
 print(mathy_thing)
 
@@ -37,12 +37,16 @@ mean(enterStructureToApplyEntityTo)
 
 this is known as "accessible without qualification"''' 
 
+print('from module import entity ops\n')
+
 numbers: list = [1, 100]
 
 average: float = mean(numbers)
 
 print(average)
 
+print()
+print('Import multiple entities from module from package import entity1, entity 2\n')
 # imported entities from datetime
 
 print (date.today())
@@ -51,12 +55,15 @@ print (datetime.now())
 # module operations with import *
 # ascii_lowercase and ascii_uppercase are entities in the string module
 # this again risks namespace collisions
+print()
+print('ops for from entity import *\n')
 lower_case: str = ascii_lowercase
 upper_case: str = ascii_uppercase
 print(lower_case)
 print(upper_case)
 
-# alias operations 
+# alias operations when whole module is alias
+print('Whole module alias ops; import entity as alias\n')
 
 password = 'guest'
 
