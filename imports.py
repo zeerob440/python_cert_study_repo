@@ -15,7 +15,7 @@ from datetime import date, datetime
 from string import *
 
 # importing a module with 'as' keyword and an alias
-import hashlib as supersecertsuace
+import hashlib as supersecertsauce
 
 
 
@@ -60,6 +60,6 @@ print(upper_case)
 
 password = 'guest'
 
-output = supersecertsuace.sha256(password.encode())
+output = supersecertsauce.sha256(password.encode())
 
 print(output.hexdigest())
