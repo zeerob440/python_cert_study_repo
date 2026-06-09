@@ -19,7 +19,7 @@ import hashlib as supersecertsauce
 
 # importing modules with multiple entity aliases. 
 
-from random import choice as pikdis, randint as anynum, shuffle as mixit
+from random import choice as pikdis, randint as anynum
 
 
 
