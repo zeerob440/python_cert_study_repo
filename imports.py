@@ -17,6 +17,10 @@ from string import *
 # importing a module with 'as' keyword and an alias
 import hashlib as supersecertsauce
 
+# importing modules with multiple entity aliases. 
+
+from random import choice as pikdis, randint as anynum, shuffle as mixit
+
 
 
 ''' to call an ENTITY inside a module write:
@@ -70,3 +74,16 @@ password = 'guest'
 output = supersecertsauce.sha256(password.encode())
 
 print(output.hexdigest())
+
+print('from module import entity1 as thinga, entity2 as thingb, entity3 as thingc\n')
+
+
+coin: list = ['heads', 'tails']
+
+toss_result = pikdis(coin)
+
+print (toss_result)
+
+rnum: float = anynum(1, 5)
+
+print (anynum)
