@@ -42,5 +42,14 @@ but they are deterministic and predictable.
 This works by using a SEED as an input that is run through an
 algorithm that returns a NEW SEED VALUE as an output.
 
+random entities
 
+random()- produces a float between 0 an 1 inclusive
+seed(intValueGoesHere)- this sets the seed with a desired value
+seed() - sets seed with current time 
+# IF seed is set, the return values will always be the same
 '''
+print('seed in action below \n')
+chaos.seed(0)
+
+print(chaos.random())
