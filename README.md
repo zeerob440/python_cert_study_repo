@@ -16,6 +16,18 @@ This repo is for archiving, versioning, and studying for the PCAP Certification.
 
 ### Working with Standard Modules
 
-dir(modleNameOrAliasName)- returns an alphabetical list of all entities in a module. 
+dir(moduleNameOrAliasName)- returns an alphabetical list of all entities in a module.
 
-the dir() command can be used directly in a console after the module has been imported. 
+the dir() command can be used directly in a console after the module has been imported.
+
+### Packages
+
+- Package is a container for modules
+- Module is a container for functions
+
+so the hierarchy goes: Package, module, function.
+
+in other words a package is a folder full of modules.
+
+- separation of concerns applies to packages.
+
