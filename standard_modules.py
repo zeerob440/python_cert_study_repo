@@ -58,7 +58,16 @@ randrange(startInclusiveHere, endExclusiveHere, stepValueHere)
 
 RANDINT
 randint is both side inclusive, and return a random whole number
-randint() 
+randint()
+
+CHOICE and SAMPLE Functions
+choice(enterIterableHere)
+returns a prandom item
+
+SAMPLE()
+sample(iterableHere, intOfItemsWantedForRandomReturn)
+
+
 '''
 print('seed(0) in action below.\n')
 chaos.seed(0)
@@ -76,8 +85,17 @@ print()
 print('below is randrange() output, it is RIGHT EXCLUSIVE')
 print(rando_range)
 print()
-print('random() in action below. returns a float between 0 and 0.99_ \n')
+print('random() in action below.TAKES NO ARGS returns a float between 0 and 0.99_ \n')
 print(rando_float)
+print()
+print('choice() and sample in action\n')
+
+people: list = ['wafa', 'elaine', 'kristin', 'stefanie', 'nunu']
+print('choice returns a single item from an iterable\n')
+print(chaos.choice(people))
+print()
+print('sample() requires 2 args, it returns a sepcified number of random items from an iterable\n')
+print(chaos.sample(people, 2))
 
 
 
