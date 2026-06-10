@@ -33,5 +33,8 @@ in other words a package is a folder full of modules.
 
 When packages are created and modules are imported a __pycache__ file appears in the package container.
 This __pycache__ contains .pyc files not readable by humans and contains semi-compiled python code ready for Pythons terp.
-    * this is why imports happen faster, each time after the initial import. 
+- this is why imports happen faster, each time after the initial import. 
 
+- when modules are imported, they are implicitly executed by Python, therefore initialization only has to occur once per program.
+- when running a program from it's own program __name__ will return __main__
+- if the program is imported to another program the name becomes nameOfProgram sans .py. 
