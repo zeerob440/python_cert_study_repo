@@ -16,4 +16,6 @@ This repo is for archiving, versioning, and studying for the PCAP Certification.
 
 ### Working with Standard Modules
 
+dir(modleNameOrAliasName)- returns an alphabetical list of all entities in a module. 
 
+the dir() command can be used directly in a console after the module has been imported. 
