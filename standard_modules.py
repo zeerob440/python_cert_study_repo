@@ -90,11 +90,11 @@ print(rando_float)
 print()
 print('choice() and sample in action\n')
 
-people: list = ['wafa', 'elaine', 'kristin', 'stefanie', 'nunu']
+people: list = ['wafa', 'elaine', 'kristen', 'stefanie', 'nunu']
 print('choice returns a single item from an iterable\n')
 print(chaos.choice(people))
 print()
-print('sample() requires 2 args, it returns a sepcified number of random items from an iterable\n')
+print('sample() requires 2 args, it returns a specified number of random items from an iterable\n')
 print(chaos.sample(people, 2))
 
 
