@@ -47,9 +47,27 @@ random entities
 random()- produces a float between 0 an 1 inclusive
 seed(intValueGoesHere)- this sets the seed with a desired value
 seed() - sets seed with current time 
-# IF seed is set, the return values will always be the same
-'''
-print('seed in action below \n')
-chaos.seed(0)
+# IF seed is set, the return values will always be the same with each program run.
 
+INTEGER ENTITIES
+THESE Entities return WHOLE NUMBERS
+# randrange is RIGHT SIDE EXCLUSIVE ALWAYS
+randrange(endIntExclusiveHere)
+randrange(startInclusiveHere, endExclusiveHere)
+randrange(startInclusiveHere, endExclusiveHere, stepValueHere)
+
+RANDINT
+randint is both side inclusive, and return a random whole number
+randint() 
+'''
+print('seed(0) in action below.\n')
+chaos.seed(0)
+print("setting the seed to any number always returns the same number.")
 print(chaos.random())
+print()
+print('randrange and randint in action\n')
+
+ranint: int = chaos.randint(1, 5)
+
+print(ranint)
+
