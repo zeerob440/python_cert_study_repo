@@ -1,5 +1,5 @@
-import random 
+import hashlib
 
-contents = dir(random)
+contents = dir(hashlib)
 
 print(contents)
