@@ -44,7 +44,7 @@ algorithm that returns a NEW SEED VALUE as an output.
 
 random entities
 
-random()- produces a float between 0 an 1 inclusive
+random()- produces a float between 0 an 1 EXCLUSIVE
 seed(intValueGoesHere)- this sets the seed with a desired value
 seed() - sets seed with current time 
 # IF seed is set, the return values will always be the same with each program run.
@@ -65,9 +65,19 @@ chaos.seed(0)
 print("setting the seed to any number always returns the same number.")
 print(chaos.random())
 print()
-print('randrange and randint in action\n')
+print('randrange(), randint() and random() in action\n')
 
 ranint: int = chaos.randint(1, 5)
-
+rando_range: int = chaos.randrange(0, 3)
+rando_float: float =chaos.random()
+print('Below is randint output it is BOTH SIDE INCLUSIVE')
 print(ranint)
+print()
+print('below is randrange() output, it is RIGHT EXCLUSIVE')
+print(rando_range)
+print()
+print('random() in action below. returns a float between 0 and 0.99_ \n')
+print(rando_float)
+
+
 
