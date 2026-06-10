@@ -21,7 +21,15 @@ import hashlib as supersecertsauce
 
 from random import choice as pikdis, randint as anynum
 
+'''
+INVOKING IMPORTED ENTITIES
+IF DECLARED: import moduleNameHere
+    INVOKE: moduleNamehere.entityNameHere
 
+IF DECLARED: from moduleNameHere import entityNameHere
+    INVOKE: entityNameHere()
+    #parentheses are only needed if the entity is a class constructor or a function
+'''
 
 ''' to call an ENTITY inside a module write:
 
