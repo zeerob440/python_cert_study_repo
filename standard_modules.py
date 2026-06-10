@@ -14,4 +14,4 @@ print('alias dir() example below\n')
 # If a module has been imported with an alias dir(alias)
 contents_content = dir(chaos)
 
-print (chaos)
+print (contents_content)
