@@ -22,6 +22,8 @@ the dir() command can be used directly in a console after the module has been im
 
 ### Packages
 
+- practically a package is a folder with an __init__.py declared in it. 
+
 - Package is a container for modules
 - Module is a container for functions
 
