@@ -20,6 +20,9 @@ dir(moduleNameOrAliasName)- returns an alphabetical list of all entities in a mo
 
 the dir() command can be used directly in a console after the module has been imported.
 
+- when you run a file directly, its __name__ variable is set to __main__;
+- when a file is imported as a module, its __name__ variable is set to the file's name (excluding .py)
+
 ### Packages
 
 - practically a package is a folder with an __init__.py declared in it. 

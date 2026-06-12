@@ -9,3 +9,5 @@ In Python there is a list that stores all locations and directories related to a
 '''
 for path in sys.path:
     print(path)
+# how to add a folder to a file path
+#path.append()
