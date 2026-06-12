@@ -40,3 +40,13 @@ This __pycache__ contains .pyc files not readable by humans and contains semi-co
 - when modules are imported, they are implicitly executed by Python, therefore initialization only has to occur once per program.
 - when running a program from it's own program __name__ will return __main__
 - if the program is imported to another program the name becomes nameOfProgram sans .py. 
+
+### PIP
+
+PyPI (Python Package Index) is the Python central repository maintained by the PYTHON SOFTWARE FOUNDATION
+- PyPY repo is know as the 'Cheese Shop" named after a Monty Python skit. 
+- PyPI is free of charge.
+- pip the installer for PyPI or the Cheese Shop
+
+
+
