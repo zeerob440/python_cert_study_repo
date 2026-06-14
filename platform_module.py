@@ -45,7 +45,7 @@ dis_sys_version = platform.version()
 print(dis_sys_version)
 print()
 
-print('python_implementation in action\n')
+print('python_implementation in action, platform.python_implementation \n')
 print(platform.python_implementation())
 print()
 
