@@ -51,5 +51,25 @@ PyPI (Python Package Index) is the Python central repository maintained by the P
 - PyPI is free of charge.
 - pip the installer for PyPI or the Cheese Shop
 
+### useful Pip commands
+1. pip show moduleName
+returns:
+* name
+* version
+* summary
+* Requires
+- what other modules this package needs to work
+* Required-by
+- Which installed packages are required by this package. 
+
+2. pip list
+* show all locally installed python modules
+
+3. pip uninstall moduleName
+* uninstalls targeted module
+
+4. pip install moduleName
+* installs targeted module
+
 
 
