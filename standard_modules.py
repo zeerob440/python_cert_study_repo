@@ -29,7 +29,8 @@ acos(x) arccosine of x
 atan(x) arctangent of x
 RETURNS ALL VALUES IN RADIANS
 
-pi constant 3.14_
+pi #constant 3.14_
+e #constant Euler's Number 2.71
 radians(x) converts degrees to rad
 degrees(x) converts radians to degrees
 '''

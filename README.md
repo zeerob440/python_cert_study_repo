@@ -19,7 +19,7 @@ This repo is for archiving, versioning, and studying for the PCAP Certification.
 dir(moduleNameOrAliasName)- returns an alphabetical list of all entities in a module.
 
 the dir() command can be used directly in a console after the module has been imported.
-- just beacuse a package is imported, does not mean entities in the pacakge are implicitly reachable. 
+- just because a package is imported, does not mean entities in the package are implicitly reachable. 
 - when you run a file directly, its __name__ variable is set to __main__;
 - when a file is imported as a module, its __name__ variable is set to the file's name (excluding .py)
 
