@@ -45,3 +45,13 @@ print(t)
 # chr uses the code point number to return its associated character
 get_char = chr(45)
 print(get_char)
+
+# string indexing
+
+index_dis: str = 'dogs'
+
+for rune in index_dis:
+    print(rune, end = '')
+
+# String Slicing
+
