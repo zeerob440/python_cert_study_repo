@@ -33,3 +33,7 @@ print(len(long_string))
 the_devil_u_know: str = 'a' * 4
 the_devil_u_dont: str = 4 * 'a'
 print(the_devil_u_know, the_devil_u_dont, end = ',')
+
+# ord() function
+# known as "ordinal"
+# returns Unicode code point (number)
