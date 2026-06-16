@@ -1,6 +1,6 @@
 # this program studies strings
 
-# strings are immutable 
+# strings are immutable, this means a string cannot be del(), pop(), append(), insert()
 
 #len function
 
@@ -53,5 +53,18 @@ index_dis: str = 'dogs'
 for rune in index_dis:
     print(rune, end = '')
 
-# String Slicing
+# append by concatenation
+# can add anything on the left or right of initial string, not the middle.
+
+add_to_dis: str = 'hockey puck'
+#\n just breaks the previous end = ''
+print('\n' + add_to_dis)
+
+# append like concat
+add_to_dis: str = 'my ' + add_to_dis
+print( add_to_dis)
+
+add_to_dis: str = add_to_dis + ' signed.'
+
+print(add_to_dis)
 
