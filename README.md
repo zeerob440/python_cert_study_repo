@@ -71,5 +71,31 @@ returns:
 4. pip install moduleName
 * installs targeted module
 
+## Module 2 notes
 
+### characters
+
+ASCII - American Standard Code for Information Interchange
+* uses 256 characters
+
+I18N- Internationalization
+* use 18 different letters
+
+code point - a number that is used to make a character
+
+Unicode- uses unique characters to more than 1milli code points. stores files in computer memory such as 
+* UCS-4 (universal character set) uses 4 bytes to store each char
+* BOM (byte order mark)-unprintable combination of bits announcing if the file is UCS-4 or UTF-8
+* UTF-8 (uniform Transformation Format) - uses as many bits as for code points. 8 bits for ASCII, 16 bits for non-latin and 24 bits for CJK (china, japan, korea)
+
+### attributes of strings
+
+String are:
+* immutable
+
+len()
+* does not count escape characters
+* if string is empty, it will return 'empty' 
+
+overloading- using operators that do one thing outside a string, but do another thing inside the string.
 
