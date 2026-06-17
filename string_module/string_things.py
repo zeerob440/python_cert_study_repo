@@ -159,11 +159,10 @@ print(other_weird_str.isalpha())
 # isspace() method
 # returns True if all spaces are white space, or escapes. 
 
-# lower() method
-# makes a copy of source string, replaces all uppercase chars with lowercase chars
+
 
 this_str: str = 'dataDyne'
 print('lower() in action.\n')
 print(this_str.lower())
-print('the orignal string remains intact\n')
+print('the original string remains intact\n')
 print(this_str)

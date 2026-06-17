@@ -1,4 +1,7 @@
-# startswith() and endswith() methods return a bool if a target string starts with or ends with something
+# startswith() and endswith() methods return True/False if a target string starts with or ends with something.
+# syntax
+# targetString.startswith('targetSequence')
+# targetString.endswith('targetSequence')
 
 end_str: str = 'AB CD AB CD'
 
