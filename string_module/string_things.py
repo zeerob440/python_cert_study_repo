@@ -95,3 +95,46 @@ print('Count() method in action below.\n')
 print(index_dis, '\n')
 count_dis = index_dis.count('r')
 print(count_dis)
+
+# capitalize() method
+# this method capitalizes the first chr of a string generally
+# if the first char is a whitespace the first char in not captalized
+print('capitalize() in action below.\n')
+print(index_dis.capitalize())
+# if the string is numbers it returns numbers unchanged
+num_string: str = '245'
+print(num_string.capitalize())
+
+# center() method
+print('center() method in action below.')
+the_str: str = 'Bingo'
+print('if len(string is) odd, extra space goes on right side.\n')
+print(the_str.center(10, '*'))
+
+print(the_str.center(13, '*'))
+
+# endswith() method
+# endswith() returns a bool if a string ends with the target chars
+print('endswith() method below.Usecase: finding file extensions.\n')
+print(num_string.endswith('5'))
+print(num_string.endswith('2'))
+
+# find()method
+# works only on strings.
+# returns the index of the first occurrence of target string
+# does not return an error if target not found, instead returns-1
+# which makes it safer than the index() method. 
+print('find() method in action below\n')
+print(the_str.find('o'))
+print(the_str.find('z'))
+
+#isalnum() method
+# returns a bool if a string contains both numbers and letters
+# so it looks for special chars and whitespaces, returns False if found
+url: str = 'aripley@weyland-utani.com'
+monitor: str = '343GuiltySpark'
+strongest_avenger: str = 'strongest avenger'
+print('isalnum() method below\n')
+print(url.isalnum())
+print(monitor.isalnum())
+print(strongest_avenger.isalnum())
