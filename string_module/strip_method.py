@@ -2,7 +2,7 @@
 
 strip_poker: str = '---10-jqa---'
 
-# .strip() remove all left or right consecutive whitespace if no target specified, or targeted char
+# .strip() remove all leading left or right consecutive whitespace if no target specified, or targeted char
 print(strip_poker.strip('-'))
 
 # lstrip() does the same as strip, but starts from the left side of the string.
@@ -11,3 +11,6 @@ print(strip_poker.strip('-'))
 
 print(strip_poker.lstrip('-'))
 print(strip_poker.rstrip('-'))
+
+# can also pass like this
+print('www.weyland-yutani.com'.lstrip('w'))
