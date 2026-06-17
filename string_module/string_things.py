@@ -138,3 +138,23 @@ print('isalnum() method below\n')
 print(url.isalnum())
 print(monitor.isalnum())
 print(strongest_avenger.isalnum())
+
+# isalpha() and isdigit() methods
+# return True or False if string is all alpha or all digit
+# special chars and white space do not count as isalpha() will return False
+# useful for input validation
+string_2: str = '567'
+weird_string: str = 'T&E'
+other_weird_str: str = 'Big deal'
+print('isalpha(), isdigit() in action below\n')
+print(string_2.isalpha())
+print(string_2.isdigit())
+print(weird_string.isalpha())
+print(other_weird_str.isalpha())
+
+# isupper() islower() methods,
+# returns True if all chars are lower, or all chars are upper,
+# returns False if whitespace, not all chars are upper or lower respectively. 
+
+# isspace() method
+# returns True if all spaces are white space, or escapes. 
