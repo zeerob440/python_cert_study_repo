@@ -69,3 +69,26 @@ An algorithm used to perform such a comparison for the English language is calle
 
 
 4. Due to limited native float and integer data precision, it's sometimes reasonable to store and process huge numeric values as strings. This is the technique Python uses when you force it to operate on an integer number consisting of a very large number of digits.
+
+### try except
+
+Don't forget that:
+
+* the except branches are searched in the same order in which they appear in the code;
+* you must not use more than one except branch with a certain exception name;
+* the number of different except branches is arbitrary – the only condition is that if you use try, you must put at least one except (named or not) after it;
+* the except keyword must not be used without a preceding try;
+* if any of the except branches is executed, no other branches will be visited;
+* if none of the specified except branches matches the raised exception, the exception remains unhandled (we'll discuss it soon)
+* if an unnamed except branch exists (one without an exception name), it has to be specified as the last.
+
+1. You cannot add more than one anonymous (unnamed) except branch after the named ones.
+2. All the predefined Python exceptions form a hierarchy, i.e. some of them are more general (the one named BaseException is the most general one) while others are more or less concrete (e.g. IndexError is more concrete than LookupError).
+
+You shouldn't put more concrete exceptions before the more general ones inside the same except branche sequence. For example, you can do this:
+
+3. The Python statement raise ExceptionName can raise an exception on demand. The same statement, but lacking ExceptionName, can be used inside the except branch only, and raises the same exception which is currently being handled.
+
+
+4. The Python statement assert expression evaluates the expression and raises the AssertError exception when the expression is equal to zero, an empty string, or None. You can use it to protect some critical parts of your code from devastating data.
+
