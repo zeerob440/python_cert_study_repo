@@ -99,3 +99,11 @@ len()
 
 overloading- using operators that do one thing outside a string, but do another thing inside the string.
 
+### sort() and sorted()
+
+1. sort()
+    * 1 syllable
+    * same list modified in Alpha order
+2. sorted()
+    * 2 syllables
+    * produces a modified copy of original list, 2 total lists
