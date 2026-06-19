@@ -17,6 +17,7 @@
 
 6. A Python file named __init__.py is implicitly run when a package containing it is subject to import, and is used to initialize a package and/or its sub-packages (if any). The file may be empty, but must not be absent.
 
+## Strings
 1. Computers store characters as numbers. There is more than one possible way of encoding characters, but only some of them gained worldwide popularity and are commonly used in IT: these are ASCII (used mainly to encode the Latin alphabet and some of its derivates) and UNICODE (able to encode virtually all alphabets being used by humans).
 
 2. A number corresponding to a particular character is called a codepoint.
@@ -91,4 +92,21 @@ You shouldn't put more concrete exceptions before the more general ones inside t
 
 
 4. The Python statement assert expression evaluates the expression and raises the AssertError exception when the expression is equal to zero, an empty string, or None. You can use it to protect some critical parts of your code from devastating data.
+### oop
+1. A class is an idea (more or less abstract) which can be used to create a number of incarnations – such an incarnation is called an object.
 
+
+2. When a class is derived from another class, their relation is named inheritance. The class which derives from the other class is named a subclass. The second side of this relation is named superclass. A way to present such a relation is an inheritance diagram, where:
+
+superclasses are always presented above their subclasses;
+relations between classes are shown as arrows directed from the subclass toward its superclass
+
+3. Objects are equipped with:
+
+a name which identifies them and allows us to distinguish between them;
+a set of properties (the set can be empty)
+a set of methods (can be empty, too)
+
+4. To define a Python class, you need to use the class keyword. 
+
+5. To create an object of the previously defined class, you need to use the class as if it were a function. For example instance_name = ClassName()

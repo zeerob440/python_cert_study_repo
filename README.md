@@ -104,6 +104,40 @@ overloading- using operators that do one thing outside a string, but do another 
 1. sort()
     * 1 syllable
     * same list modified in Alpha order
+    * is a method
 2. sorted()
     * 2 syllables
     * produces a modified copy of original list, 2 total lists
+    * is a function
+
+### OOP
+
+OOP differs from procedural programming by using objects and their attributes instead of sequential procedures. 
+
+1. objects
+    - name
+    - attributes (things object has)
+    - methods (things object does)
+
+
+### superclass and subclass 
+2. hierarchy
+    - superclass (ship)
+        - subclass (yacht)
+            - yacht cabin  attribute/method
+
+Class is a set of objects
+
+Objects belong to classes
+
+incarnation/instance is a specific object from a set of objects for a specific class
+
+inheritance - subclasses of superclasses inherit all attributes and methods of the higher class, they can also add ne attributes and methods
+
+### stack
+
+Stacks are practically iterables in Python
+
+
+
+
