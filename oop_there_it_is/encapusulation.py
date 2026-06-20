@@ -34,8 +34,30 @@ n7 =SpcOps('SPECTER', 'shepard')
 # raises an AttrubuteError, because __name makes it difficult to reach outside the class.
 
 # name and specialty are only easily reachable from the report function, but not easily reached
-# by calling the name or specialty attributes. 
+# by calling the 'name' or 'specialty' attributes. 
 dossier = (hmss.report())
 
 print(dossier)
+
+# declaring a subclass and inheritance. 
+# class SubClassName(SuperClassName)
+class BlackOps(Soldier):
+    # add all super class attributes, and add new subclass attributes anywhere
+    def __init__(self, handler, rank, lname):
+        # initiate Superclass next
+        Soldier.__init__(self, rank, lname)
+
+        # initiate the rest of the Subclass
+        # this example uses name mangling because it is a black ops soldier
+        self.__handler = handler
+    
+    def blackOpsDeadDrop(self):
+        return f'{self.__handler}, {self.rank}, {self.lname}'
+
+agent = BlackOps('diana', '***', '47')
+
+leak =(agent.blackOpsDeadDrop())
+
+print(leak)
+
 
