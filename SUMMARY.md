@@ -110,3 +110,20 @@ a set of methods (can be empty, too)
 4. To define a Python class, you need to use the class keyword. 
 
 5. To create an object of the previously defined class, you need to use the class as if it were a function. For example instance_name = ClassName()
+
+1. A stack is an object designed to store data using the LIFO model. The stack usually performs at least two operations, named push() and pop().
+
+
+2. Implementing the stack in a procedural model raises several problems which can be solved by the techniques offered by OOP (Object Oriented Programming).
+
+
+3. A class method is actually a function declared inside the class and able to access all the class's components.
+
+
+4. The part of the Python class responsible for creating new objects is called the constructor, and it's implemented as a method of the name __init__.
+
+
+5. Each class method declaration must contain at least one parameter (always the first one) usually referred to as self, and is used by the objects to identify themselves.
+
+
+6. If we want to hide any of a class's components from the outside world, we should start its name with __. Such components are called private.

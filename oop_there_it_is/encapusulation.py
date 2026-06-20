@@ -60,4 +60,6 @@ leak =(agent.blackOpsDeadDrop())
 
 print(leak)
 
+# returns contents of a class instance
+print(hmss.__dict__)
 
