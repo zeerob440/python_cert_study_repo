@@ -8,3 +8,15 @@ class SimpleClass():
 
 # declaring a class instance
 first_obj = SimpleClass()
+
+# __init__ is a constructor it must contain at least one parameter; self
+# constructors are implicitly run
+class Stack:
+    def __init__(self):
+        self.stack_list = []
+        
+# used dot notation to access a class's properties. 
+stack_obj = Stack()
+print(len(stack_obj.stack_list))
+
+

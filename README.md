@@ -10,7 +10,7 @@ This repo is for archiving, versioning, and studying for the PCAP Certification.
  - decomposition - dividing a large program into several smaller ones.
  - Python Standard Library - Python's official standard library containing all of Python's standard modules.
 
- - namspace - A namespace is a mapping between names and objects that allows Python to organize variables, functions, classes, and modules while avoiding naming
+ - namespace - A namespace is a mapping between names and objects that allows Python to organize variables, functions, classes, and modules while avoiding naming
  conflicts.
     * inside namespaces, each name must be unique. However names can be the same inside of different modules.
 
@@ -138,6 +138,7 @@ inheritance - subclasses of superclasses inherit all attributes and methods of t
 
 Stacks are practically iterables in Python
 
+Encapsulation is the ability to protect a stack's data integrity. 
 
 
 
