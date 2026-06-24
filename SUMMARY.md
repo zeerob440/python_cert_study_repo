@@ -127,3 +127,20 @@ a set of methods (can be empty, too)
 
 
 6. If we want to hide any of a class's components from the outside world, we should start its name with __. Such components are called private.
+
+#### class functions
+
+1. An instance variable is a property whose existence depends on the creation of an object. Every object can have a different set of instance variables.
+
+Moreover, they can be freely added to and removed from objects during their lifetime. All object instance variables are stored inside a dedicated dictionary named __dict__, contained in every object separately.
+
+
+2. An instance variable can be private when its name starts with __, but don't forget that such a property is still accessible from outside the class using a mangled name constructed as _ClassName__PrivatePropertyName.
+
+
+3. A class variable is a property which exists in exactly one copy, and doesn't need any created object to be accessible. Such variables are not shown as __dict__ content.
+
+All a class's class variables are stored inside a dedicated dictionary named __dict__, contained in every class separately.
+
+
+4. A function named hasattr() can be used to determine if any object/class contains a specified pro
