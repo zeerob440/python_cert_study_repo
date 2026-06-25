@@ -54,3 +54,27 @@ class YukonWhalingShepard:
 mia = YukonWhalingShepard('Mia')
 
 mia.info()
+
+m_m: str ='''
+Methods can call methods.\n'''
+
+class Cat:
+
+
+    def __init__ (self, name): # constructor
+        self.name = name
+
+    def meow(self): # method
+        print('meow!\n')
+
+    def hiss(self): # method
+        print('Hiss!\n')
+        self.meow() # method invoking method
+
+
+moose = Cat('Moose') # object/Instance
+
+moose.hiss()
+
+## __init__ runs automatically for each instance after __init__ initially declared
+
