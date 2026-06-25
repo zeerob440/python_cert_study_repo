@@ -37,7 +37,9 @@ rico.bark()
 
 self_note: str = '''
 SELF can access both instance/object and class vars.
-It returns object/instance var first then class vars\n'''
+1. Look on the instance (object).
+2. If not found, look on the class.
+3. If still not found, AttributeError.\n'''
 
 print(self_note)
 class YukonWhalingShepard:
