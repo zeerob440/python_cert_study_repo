@@ -144,3 +144,15 @@ All a class's class variables are stored inside a dedicated dictionary named __d
 
 
 4. A function named hasattr() can be used to determine if any object/class contains a specified pro
+
+# reflection and introspection
+
+1. A method is a function embedded inside a class. The first (or only) parameter of each method is usually named self, which is designed to identify the object for which the method is invoked in order to access the object's properties or invoke its methods.
+
+
+2. If a class contains a constructor (a method named __init__) it cannot return any value and cannot be invoked directly.
+
+
+3. All classes (but not objects) contain a property named __name__, which stores the name of the class. Additionally, a property named __module__ stores the name of the module in which the class has been declared, while the property named __bases__ is a tuple containing a class's superclasses.
+
+For example:
