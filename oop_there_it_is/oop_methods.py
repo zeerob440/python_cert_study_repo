@@ -72,12 +72,15 @@ class Cat:
     def hiss(self): # method
         print('Hiss!\n')
         self.meow() # method invoking method
+    def __str__(self): # method allows python to return an instance/object string name instead of memory location
+        return (self.name)
 
 
 moose = Cat('Moose') # object/Instance
 
 moose.hiss()
 
+print(moose)# prints moose because of __str__() method in Cat Class
 # __dict__ing around
 '''
 | Special Attribute | Belongs to                         | Meaning                           |
