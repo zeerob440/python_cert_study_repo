@@ -7,3 +7,4 @@ rep_string: str = 'this is it'
 print(rep_string.replace('is', '00', 1))
 # replaces both instances
 print(rep_string.replace('is', '00', 2))
+

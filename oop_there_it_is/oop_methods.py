@@ -78,5 +78,43 @@ moose = Cat('Moose') # object/Instance
 
 moose.hiss()
 
+# __dict__ing around
+'''
+| Special Attribute | Belongs to                         | Meaning                           |
+| ----------------- | ---------------------------------- | --------------------------------- |
+| `__name__`        | **Class** (also functions/modules) | "What's your name?"               |
+| `__base__`        | **Class**                          | "Who's your parent?"              |
+| `__module__`      | **Class**                          | "Which Python file are you from?" |
+| `__dict__`        | **Both**                           | "What do you contain?"            |
+'''
+# dict returns all the attributes of an instance if aimed at an instance object
+print(moose.__dict__)
+# if __dict__ is aimed at a class, it returns all the methods and attributes in the class and the memory location.
+print(Cat.__dict__)
+
+# __name__ returns name of class if aimed at class
+
+print(Cat.__name__)
+
+# __name__ does not work on objects/instances, returns AttributeError
+#print(moose.__name__)
+# __module returns where the class lives, works on methods, classes, instance objects
+print(Cat.__module__)
+print(Cat.hiss.__module__)
+print(moose.__module__)
+
 ## __init__ runs automatically for each instance after __init__ initially declared
 
+
+'''
+__init__ is a method, and a method is a function, it can be treated as such
+__init__ must have a self parameter
+it is used to set up object instances
+
+__init__ cannot return a value
+__init__ cannot be directly invoked from the class or the object
+'''
+# methods can be invoked without arguments
+# methods must be declared with at least parameter (self)
+
+# inner life of class objects
