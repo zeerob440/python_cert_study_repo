@@ -155,4 +155,25 @@ All a class's class variables are stored inside a dedicated dictionary named __d
 
 3. All classes (but not objects) contain a property named __name__, which stores the name of the class. Additionally, a property named __module__ stores the name of the module in which the class has been declared, while the property named __bases__ is a tuple containing a class's superclasses.
 
-For example:
+# OOP Stuff
+
+1. A method named __str__() is responsible for converting an object's contents into a (more or less) readable string. You can redefine it if you want your object to be able to present itself in a more elegant form.
+
+ A function named issubclass(Class_1, Class_2) is able to determine if Class_1 is a subclass of Class_2.
+
+3. A function named isinstance(Object, Class) checks if an object comes from an indicated class. 
+
+4. A operator called is checks if two variables refer to the same object. 
+
+5. A parameterless function named super() returns a reference to the nearest superclass of the class.
+
+6. Methods as well as instance and class variables defined in a superclass are automatically inherited by their subclasses.
+
+7. In order to find any object/class property, Python looks for it inside:
+
+the object itself;
+all classes involved in the object's inheritance line from bottom to top;
+if there is more than one class on a particular inheritance path, Python scans them from left to right;
+if both of the above fail, the AttributeError exception is raised.
+
+8. If any of the subclasses defines a method/class variable/instance variable of the same name as existing in the superclass, the new name overrides any of the previous instances of the name.
