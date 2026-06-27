@@ -6,7 +6,7 @@
 class SimpleClass():
     pass
 
-# declaring a class instance
+# declaring a class instance-object
 first_obj = SimpleClass()
 
 # __init__ is a constructor it must contain at least one parameter; self

@@ -2,7 +2,7 @@
 
 class Team:
 
-    team_type: str = 'Hockey Team'
+    team_type: str = 'Hockey Team' # class var
 
 
     def __init__(self, team_name):

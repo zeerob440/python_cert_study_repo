@@ -24,8 +24,18 @@ Exceptions have hierarchy
     returns when say a string '3.3' is converted to int
 
 '''
+def f(x):
+    try:
+        x = x / x
+    except:
+        print("a",end='')
+    else:
+        print("b",end='')
+    finally:
+        print("c",end='')
 
-f = 3.3
 
-f = int(f)
-print(f)
+f(1)
+f(0)
+
+

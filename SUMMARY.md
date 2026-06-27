@@ -155,7 +155,7 @@ All a class's class variables are stored inside a dedicated dictionary named __d
 
 3. All classes (but not objects) contain a property named __name__, which stores the name of the class. Additionally, a property named __module__ stores the name of the module in which the class has been declared, while the property named __bases__ is a tuple containing a class's superclasses.
 
-# OOP Stuff
+### OOP Stuff
 
 1. A method named __str__() is responsible for converting an object's contents into a (more or less) readable string. You can redefine it if you want your object to be able to present itself in a more elegant form.
 
@@ -177,3 +177,16 @@ if there is more than one class on a particular inheritance path, Python scans t
 if both of the above fail, the AttributeError exception is raised.
 
 8. If any of the subclasses defines a method/class variable/instance variable of the same name as existing in the superclass, the new name overrides any of the previous instances of the name.
+
+### exceptions
+
+1. The else: branch of the try statement is executed when there has been no exception during the execution of the try: block.
+
+
+2. The finally: branch of the try statement is always executed.
+
+
+3. The syntax except Exception_Name as an exception_object: lets you intercept an object carrying information about a pending exception. The object's property named args (a tuple) stores all arguments passed to the object's constructor.
+
+
+4. The exception classes can be extended to enrich them with new capabilities, or to adopt their traits to newly defined exceptions.
