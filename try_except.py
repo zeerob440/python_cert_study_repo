@@ -26,7 +26,7 @@ Exceptions have hierarchy
 '''
 def f(x):
     try:
-        x = x / x
+        x == 1
     except:
         print("a",end='')
     else:
