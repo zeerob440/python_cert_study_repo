@@ -1,0 +1,136 @@
+GIT BASH OPERATIONS DOCUMENTATION
+
+1. Open
+
+1. CONFIGURE GIT IDENTITY, (one-time per machine)
+
+	git config --global user.name 'enter name here'
+	
+	git config --global user.email 'enter email here'
+
+
+2. CREATE DIRECTORY
+	
+	create a directory (Git Bash uses PowerShell commands)
+	
+	mkdir 'project_directory_name'
+	
+3. CHECK DIRECTORY PATH WITH 'pwd' (Print Local Directory)
+	pwd will return the filepath of where the project is being built.
+	
+4. INITIATE GIT 
+	
+	git init
+	
+5. DECLARE FILES WITH 'touch'
+
+	touch 'name of program.py 
+	touch .gitignore
+	touch README.md
+	
+6. POPULATE GIT IGNORE AS NEEDED
+
+	.gitingore
+	venv
+	pyc
+	*db
+	__pycache__/
+	
+7. CHECK FILES EXISTANCE WITH 'ls -la'
+
+	ls -la 
+	
+	#returns all files in the project.
+	
+8. CODE FILES WITH 'code .' (CODE ALL)
+
+	code .
+	#this opens the code editor where files can be built
+	# save the files in the IDE
+	
+9. CHECK IF PROGRAM RUNS
+
+	py 'name of program'.py
+	
+10. CHECK FILE COMMIT STATUS
+
+	git status
+	
+	# returns what commits are pending 
+	
+11. PREP FILES FOR GIT STAGING WITH 'git add .' 
+
+	git add .
+	# preps files for changes
+	
+	
+12. COMMIT UPDATES
+
+	git commit -m'enter commit comment here'
+	
+13. CHECK STATUS
+	# ensures commit committed
+	
+	git status
+	
+	
+CONNECT TO A GITHUB ORIGIN
+
+1. open GitHub Origin
+
+2. Click new repository
+
+3. copy address
+
+4. open Git BASH
+
+	git remote add origin 'githublink.git'
+	
+
+TEST CONNECTION
+
+	git remote -v
+	
+	# will return fetch and push if working.
+	
+RENAME 'master' branch 'main'
+
+	git branch -M main
+	# GitHub expects 'main' not the default 'master'
+	
+
+PUSH OPERATIONS WITH GITHUB ORIGIN
+
+1. Declare first push to origin with git push -u origin insertbranchnamehere 
+	
+	git push -u origin main
+	
+2. -u creates an upload relationship between local and origin it only needs to be declared once !FOR EACH NEW BRANCH!
+
+3. subsequent pushes to origin
+
+	git push 
+	
+PULL OPERATIONS WITH GITHUB ORIGIN
+
+1. check status
+	git status
+	# should return 'working clean tree
+	
+2. pull
+
+	git pull
+	
+CREATING AND SWITCHING BRANCHES
+
+1. first iteration creation and switch
+
+	git switch -c nameOfBranch
+	# -c declares the new branch
+	
+2. subsequent switches
+
+	git switch nameOFBranch
+	
+
+	
