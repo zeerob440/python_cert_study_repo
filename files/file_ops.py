@@ -54,14 +54,18 @@ print()
 # .seek() method needs to be used with this. .seek() controls the cursor.
 # to first you need to move the cursor to EOF == seek(0, 2) tow write the file wo overwriting 
 # then to read the file, the cursor must be moved to SOF == seek(0)
+# .tell() tells you were the cursor is in a file. 
 print("r+ demo\n")
 
 with open('files/crud.txt', 'r+') as file2:
     # move cursor to end of file
+    print(f'Cursor is here in bytes: {file2.tell()}')
     file2.seek(0, 2)
+    print(f'Cursor is here in bytes: {file2.tell()}')
     file2.write('\nThis was added with "r+".')
     # move cursor back to start of file
     file2.seek(0)
+    print(f'Cursor is here in bytes: {file2.tell()}')
     print(file2.read())
 
 # write and update 'w+'
