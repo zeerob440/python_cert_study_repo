@@ -190,3 +190,22 @@ if both of the above fail, the AttributeError exception is raised.
 
 
 4. The exception classes can be extended to enrich them with new capabilities, or to adopt their traits to newly defined exceptions.
+
+
+# lambda, map(), filter(), __iter__, __next__()
+
+1. An iterator is an object of a class providing at least two methods (not counting the constructor):
+
+__iter__() is invoked once when the iterator is created and returns the iterator's object itself;
+__next__() is invoked to provide the next iteration's value and raises the StopIteration exception when the iteration comes to an end.
+
+2. The yield statement can be used only inside functions. The yield statement suspends function execution and causes the function to return the yield's argument as a result. Such a function cannot be invoked in a regular way – its only purpose is to be used as a generator (i.e. in a context that requires a series of values, like a for loop).
+
+
+3. A conditional expression is an expression built using the if-else operator
+
+4. A lambda function is a tool for creating anonymous functions
+
+5. The map(fun, list) function creates a copy of a list argument, and applies the fun function to all of its elements, returning a generator that provides the new list content element by element. 
+
+6. The filter(fun, list) function creates a copy of those list elements, which cause the fun function to return True. The function's result is a generator providing the new list content element by element. 
