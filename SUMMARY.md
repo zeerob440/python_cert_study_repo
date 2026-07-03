@@ -263,3 +263,16 @@ If you want to find out what the current working directory is, you can use the g
 6. To remove a directory, you can use the rmdir() function, but to remove a directory and its subdirectories, use the removedirs() function.
 
 7. On both Unix and Windows, you can use the system function, which executes a command passed to it as a string
+
+# calendar module
+
+1. In the calendar module, the days of the week are displayed from Monday to Sunday. Each day of the week has its representation in the form of an integer, where the first day of the week (Monday) is represented by the value 0, while the last day of the week (Sunday) is represented by the value 6.
+
+
+2. To display a calendar for any year, call the calendar function with the year passed as its argument
+
+Note: A good alternative to the above function is the function called prcal, which also takes the same parameters as the calendar function, but doesn't require the use of the print function to display the calendar.
+
+
+3. To display a calendar for any month of the year, call the month function, passing year and month to it.
+
