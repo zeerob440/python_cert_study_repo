@@ -50,6 +50,26 @@ x = [1, 2, 3]
 
 print(x * 2 + '\n')
 
+print('indexing rules')
+'''
+before evaluating determine:
+
+if either boundary is outside of the list. 
+
+if yes:
+    python clips
+else:
+    follow as written
+'''
+
+x[-1]      # 3
+
+x[-1:]     # [3]
+
+x[:-1]     # [1, 2]
+
+x[-100:]   # [1, 2, 3]
+
 
 
 
