@@ -6,7 +6,7 @@ else = do the thing ONLY if except fails
 finally always do the thing 
 
 '''
-
+# just comment out x = 1 to see how program run time changes. 
 x = 1 
 
 
