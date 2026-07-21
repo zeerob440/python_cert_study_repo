@@ -86,12 +86,13 @@ Don't forget that:
 1. You cannot add more than one anonymous (unnamed) except branch after the named ones.
 2. All the predefined Python exceptions form a hierarchy, i.e. some of them are more general (the one named BaseException is the most general one) while others are more or less concrete (e.g. IndexError is more concrete than LookupError).
 
-You shouldn't put more concrete exceptions before the more general ones inside the same except branche sequence. For example, you can do this:
+You shouldn't put more concrete exceptions before the more general ones inside the same except branch sequence. For example, you can do this:
 
 3. The Python statement raise ExceptionName can raise an exception on demand. The same statement, but lacking ExceptionName, can be used inside the except branch only, and raises the same exception which is currently being handled.
 
 
 4. The Python statement assert expression evaluates the expression and raises the AssertError exception when the expression is equal to zero, an empty string, or None. You can use it to protect some critical parts of your code from devastating data.
+
 ### oop
 1. A class is an idea (more or less abstract) which can be used to create a number of incarnations – such an incarnation is called an object.
 

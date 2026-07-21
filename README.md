@@ -53,23 +53,23 @@ PyPI (Python Package Index) is the Python central repository maintained by the P
 
 ### useful Pip commands
 1. pip show moduleName
-returns:
-* name
-* version
-* summary
-* Requires
-- what other modules this package needs to work
-* Required-by
-- Which installed packages are required by this package. 
+    returns:
+    * name
+    * version
+    * summary
+    * Requires
+    * what other modules this package needs to work
+    * Required-by
+    - Which installed packages are required by this package. 
 
 2. pip list
-* show all locally installed python modules
+    * show all locally installed python modules
 
 3. pip uninstall moduleName
-* uninstalls targeted module
+    * uninstalls targeted module
 
 4. pip install moduleName
-* installs targeted module
+    * installs targeted module
 
 ## Module 2 notes
 
@@ -91,11 +91,11 @@ Unicode- uses unique characters to more than 1milli code points. stores files in
 ### attributes of strings
 
 String are:
-* immutable
+    * immutable
 
 len()
-* does not count escape characters
-* if string is empty, it will return 'empty' 
+    * does not count escape characters
+    * if string is empty, it will return 'empty' 
 
 overloading- using operators that do one thing outside a string, but do another thing inside the string.
 
@@ -132,7 +132,7 @@ Objects belong to classes
 
 incarnation/instance is a specific object from a set of objects for a specific class
 
-inheritance - subclasses of superclasses inherit all attributes and methods of the higher class, they can also add ne attributes and methods
+inheritance - subclasses of superclasses inherit all attributes and methods of the higher class, they can also add new attributes and methods
 
 ### stack
 
