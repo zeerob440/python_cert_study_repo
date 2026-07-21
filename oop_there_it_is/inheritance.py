@@ -13,7 +13,7 @@ class Sergeant(NCO):
 # is NCO a Subclass of Sergeant, (False), it is a subclass of NCO
 print(issubclass(NCO, Soldier))
 print(issubclass(NCO, Sergeant))
-# is a subclass of Soldier because Sergeant is a subclass of NCO. NCO is a subclass of Soldier, and there for inherits its properties
+# is a subclass of Soldier because Sergeant is a subclass of NCO. NCO is a subclass of Soldier, and therefore inherits its properties
 print(issubclass(Sergeant, Soldier))
 
 jenkins_obj = Sergeant()
@@ -66,8 +66,8 @@ class SubClass(SuperClass):
 toby = SubClass('Toby', 'Jumping', 13)
 
 print(toby)
-print(isinstance(toby, SubClass))
-print(isinstance(toby, SuperClass))
+print(isinstance(toby, SubClass)) # True
+print(isinstance(toby, SuperClass)) # True
 
 # multi inheritance ClassName(SuperClassOne, SuperClassTwo)
 class SuperUberSubClass(UberClass, SuperClass):

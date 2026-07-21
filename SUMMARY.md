@@ -144,7 +144,7 @@ Moreover, they can be freely added to and removed from objects during their life
 All a class's class variables are stored inside a dedicated dictionary named __dict__, contained in every class separately.
 
 
-4. A function named hasattr() can be used to determine if any object/class contains a specified pro
+4. A function named hasattr() can be used to determine if any object/class contains a specified program.
 
 # reflection and introspection
 
