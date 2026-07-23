@@ -84,17 +84,17 @@ Method                              Purpose
 
 .isupper()                        True if all letters are uppercase.
 
-.istitle()                        True if every word starts with acapital letter.
+.istitle()                        True if every word starts with a capital letter.
 
-.join(iterable)                   Joins strings together using thecalling string as the separator.
+.join(iterable)                   Joins strings together using the calling string as the separator.
 
 .split()                          Splits a string into a list.
 
-.strip()                          Removes whitespace (or specifiedcharacters) from both ends.
+.strip()                          Removes whitespace (or specified characters) from both ends.
 
-.find()                           Returns the first index of asubstring or -1.
+.find()                           Returns the first index of a substring or -1.
 
-.rfind()                          Returns the last index of asubstring or -1.
+.rfind()                          Returns the last index of a substring or -1.
 
 .index()                          Like find(), but raisesValueError if missing.
 

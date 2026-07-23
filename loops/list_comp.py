@@ -47,4 +47,4 @@ else_list = [num - 2 if num < 5 else num * 2 for num in numbers]
 
 print(else_list)
 
-b
+
