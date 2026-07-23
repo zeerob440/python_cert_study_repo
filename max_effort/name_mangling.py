@@ -1,4 +1,4 @@
-
+# explores how name mangling functions. 
 class Name():
     def __init__(self, name):
         # name mangled 

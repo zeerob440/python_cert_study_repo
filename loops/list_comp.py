@@ -1,11 +1,18 @@
 '''
-A list comprehension is a how to build a list inside of a list using elements from an exiting list
+A list comprehension generates a new list from another iterable. Their syntax is similar to how
+Yoda speaks, begin reading from the 'for' statement
+
+NOTE: comps cannot use while loops. 
 
 generated list = [varYouWant for elementInExistingIterable in existingIterable]
 
 or 
 
 new_list = [expression for item in iterable]
+
+or
+
+[what_to_store for item in iterable if condition]
 
 think:
 what you want
