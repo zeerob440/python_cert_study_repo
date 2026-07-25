@@ -23,6 +23,22 @@ Exceptions have hierarchy
 8. ValueError
     returns when say a string '3.3' is converted to int
 
+BaseException  = The entire deck
+│
+├── Exception          = Spades
+│     ├── TypeError         = 10♠
+│     ├── ValueError        = J♠
+│     ├── LookupError       = Q♠
+│     │      ├── IndexError = K♠
+│     │      └── KeyError   = A♠
+│     └── ArithmeticError
+│            ├── ZeroDivisionError
+│            └── OverflowError
+│
+├── KeyboardInterrupt = Clubs
+├── SystemExit        = Hearts
+└── GeneratorExit     = Diamonds
+
 '''
 def f(x):
     try:
@@ -32,13 +48,10 @@ def f(x):
     else:
         print("b",end='')
     finally:
-        print("c",end='')
+        print("c",end='\n')
 
 
 f(1)
 f(0)
 
-# type testing
-fl = 3.3
-fl = int(fl)
-print(fl)
+print (TypeError is BaseException)
