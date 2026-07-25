@@ -38,4 +38,7 @@ def f(x):
 f(1)
 f(0)
 
-
+# type testing
+fl = 3.3
+fl = int(fl)
+print(fl)
