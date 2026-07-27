@@ -58,7 +58,9 @@ sys.path.append("/my/modules")
 
 Constant   Meaning
 
-ENOENT   File or directory does not exist.EACCES   Permission denied.EEXIST   File already exists.
+ENOENT   File or directory does not exist.
+EACCES   Permission denied.
+EEXIST   File already exists.
 
 Import Syntax
 
@@ -130,9 +132,7 @@ open()                            Opens a file and returns a file object.
 
 .write()                          Writes text or bytes to a file and returns the number written.
 
-bytearray
-
-A bytearray stores mutable binary data. Unlike bytes, individualvalues can be changed after creation.
+bytearray A bytearray stores mutable binary data. Unlike bytes, individual values can be changed    after creation.
 
 Built-ins
 
@@ -156,7 +156,11 @@ map(func,it)                      Applies a function to every element and return
 
 Name           Purpose
 
-__init__     Constructor used to initialize new objects.__str__()     Controls what print(obj) displays.__dict__     Dictionary of an object's stored attributes.__module__   Module where the class was defined.__name__     Name of a class or module.__bases__    Tuple containing a class's parent class(es).self         Reference to the current object.super()      Calls methods from the parent class.
+__init__     Constructor used to initialize new objects
+.__str__()     Controls what print(obj) displays
+.__dict__     Dictionary of an object's stored attributes
+.__module__   Module where the class was defined.__name__     Name of a class or module.__bases__    Tuple containing a class's parent class(es).self Reference to the current object
+.super()      Calls methods from the parent class.
 
 # Exceptions
 
