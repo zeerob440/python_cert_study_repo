@@ -74,7 +74,7 @@ String Methods
 
 Method                              Purpose
 
-.isalpha()                        True if every character is aletter.
+.isalpha()                        True if every character is a letter.
 
 .isdigit()                        True if every character is a digit.
 

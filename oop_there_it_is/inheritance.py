@@ -19,7 +19,7 @@ print(issubclass(Sergeant, Soldier))
 jenkins_obj = Sergeant()
 johnson_obj = Sergeant()
 bishop_obj = Soldier()
-bishop_android = bishop_obj # to demonstrate is operator
+bishop_android = bishop_obj # to demonstrate is operator determines if two vars are the same object/instance
 
 # read literally again is object/instance , a Sergeant
 print (isinstance(jenkins_obj, Sergeant))
@@ -33,7 +33,7 @@ print(Soldier is NCO)
 # initiating a subclass with SuperClassName.__init__(self, name)
 
 '''
-SINGLE INHERITANCE - when on sub class inherts attributes for one super class
+SINGLE INHERITANCE - when on sub class inherits attributes for one super class
 
 Python will always search and return the most specific class attribute
 in my example below SuperClass __str__() command should return 'SuperClass'
@@ -73,6 +73,7 @@ print(isinstance(toby, SuperClass)) # True
 class SuperUberSubClass(UberClass, SuperClass):
     def __init__(self, name, ability, color ):
 
+# super classes must be constructed inside subclasses to be used. 
         SuperClass.__init__(self, name, ability)
 
         UberClass.__init__(self, color)
